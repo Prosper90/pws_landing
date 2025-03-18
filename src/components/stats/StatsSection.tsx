@@ -6,11 +6,10 @@ const StatsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our vision
+             Participatory Investment 
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
-            Our vision is to create a brighter future for all Nigerians, and we are determined to make it a reality by 2030.
-            Explore our websites to learn more about our initiatives, get involved and join us in our journey towards a brighter future for all.
+            Participation investment is an investment initiative that uses a blended finance structure which allows the Vulnerable group to participate in the capital market
           </p>
         </div>
 
@@ -38,11 +37,10 @@ const StatsSection = () => {
           {/* Second one */}
           <div className="text-center mb-12">
               <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-                Our focus
+                Mission
               </h2>
               <div className="max-w-3xl mx-auto text-md text-gray-600">
-                We strive to unite the industry regulators, local industrial manufacturers, and a of tech entrepreneurs towards a common goa.
-                 We aspire to become an inspiration by being the first third world country to achieve all sustainable development goals set by the United nation
+                Strengthening partnership to coordinate the Investment for the vulnerable group fund (VGF)
               </div>
           </div>
         </div>
