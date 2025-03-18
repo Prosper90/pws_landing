@@ -1,23 +1,6 @@
-import React from 'react';
 
 const ResourcesSection = () => {
-  const resources = [
-    {
-      title: 'Build Your Startup',
-      description: 'Guide, Resources & Tool',
-      link: '#'
-    },
-    {
-      title: 'Learn About Startup investing',
-      description: 'Startup\'s Investment Guide & Resources',
-      link: '#'
-    },
-    {
-      title: 'Investors & Startup\'s Database',
-      description: 'Directory & Database of Active Investors & Founders',
-      link: '#'
-    }
-  ];
+
 
   return (
     <div className="py-16 bg-gray-50">

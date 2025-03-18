@@ -1,11 +1,5 @@
-import React from 'react';
 
 const StatsSection = () => {
-  const stats = [
-    { value: '1500+', label: 'Active Slack Members' },
-    { value: '4000+', label: 'Posts & Conversations' },
-    { value: '$600k+', label: 'Fund Raised By Community Founders' }
-  ];
 
   return (
     <div className="py-12 md:py-16 bg-white">
