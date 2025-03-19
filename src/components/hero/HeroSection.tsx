@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div className="md:flex items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-              We're changing the economic landscapes one step
+              We're changing the economic landscapes one step at a time
             </h1>
             <p className="text-lg text-gray-600 mb-6">
               Strengthening partnership to coordinate the Investment for the vulnerable group fund (VGF)
@@ -39,7 +39,9 @@ const HeroSection = () => {
                     position: 'relative',
                     top: index % 3 === 0 ? '20px' : index % 3 === 1 ? '0px' : '40px'
                   }}
-                />
+                >
+                 <img src={`/Ellipse ${index}.png`} alt="" />  
+                </div>
               ))}
             </div>
           </div>

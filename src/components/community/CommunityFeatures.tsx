@@ -4,7 +4,7 @@ const CommunityFeatures = () => {
     <div className="pb-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative">
-          <div className="absolute inset-0 flex items-center justify-center z-0">
+          <div className="hidden absolute inset-0 md:flex items-center justify-center z-0">
             <div className="h-full w-0.5 bg-yellow-400"></div>
           </div>
           

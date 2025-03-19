@@ -32,8 +32,8 @@ const ResourcesSection = () => {
         </div> */}
 
         <div className="max-w-1xl mx-auto text-md text-gray-600">
-           Prime White Stallion Founddation is a non-governmental organisation dedicated to gighting poverty and fostering sustainable development in Nigeria. Founded on innovation,
-           collaboration and empowermwnt principles, we work tirelessly to empower individualsand communities to create positive change from within. 
+           Prime White Stallion Foundation is a non-governmental organisation dedicated to Alleviating poverty and fostering sustainable development in Nigeria. Founded on innovation,
+           collaboration and empowerment principles, we work tirelessly to empower individuals and communities to create positive change from within. 
         </div>
         <div className="max-w-1xl mx-auto text-md text-gray-600">
           Our core activities include empowerment programs, community development projects, advocacy, 
