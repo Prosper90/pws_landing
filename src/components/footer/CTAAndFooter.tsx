@@ -1,49 +1,49 @@
 
 const CTAAndFooter = () => {
-  const footerLinks = [
-    {
-      title: 'Crew & Resources',
-      links: [
-        { name: 'All Resources', href: '#' },
-        { name: 'Discount Tools', href: '#', isNew: true },
-        { name: 'Startup Workshop', href: '#', isNew: true },
-        { name: 'Investors Talk', href: '#', isNew: true },
-        { name: 'Co-founder Match', href: '#' },
-        { name: 'Job & Hire', href: '#', isNew: true },
-        { name: 'Startups Blogs', href: '#', isNew: true },
-        { name: 'Startup Demo Day', href: '#', isNew: true }
-      ]
-    },
-    {
-      title: 'Knowledge Hub',
-      links: [
-        { name: 'Learn', href: '#' },
-        { name: 'Launch & Scale', href: '#', isNew: true },
-        { name: 'Fundraising', href: '#', isNew: true },
-        { name: 'Growth/Marketing', href: '#', isNew: true },
-        { name: 'Startup School', href: '#', isNew: true },
-        { name: 'Demo Days', href: '#', isNew: true }
-      ]
-    },
-    {
-      title: 'Members',
-      links: [
-        { name: 'Community', href: '#' },
-        { name: 'Member Directory', href: '#', isNew: true },
-        { name: 'Member Calendar', href: '#', isNew: true }
-      ]
-    },
-    {
-      title: 'About & Contact',
-      links: [
-        { name: 'About Us', href: '#' },
-        { name: 'Contact US', href: '#' },
-        { name: 'VCs Newsletter', href: '#' },
-        { name: 'VC Daily Updates', href: '#' },
-        { name: 'Newsletter Ads', href: '#' }
-      ]
-    }
-  ];
+  // const footerLinks = [
+  //   {
+  //     title: 'Crew & Resources',
+  //     links: [
+  //       { name: 'All Resources', href: '#' },
+  //       { name: 'Discount Tools', href: '#', isNew: true },
+  //       { name: 'Startup Workshop', href: '#', isNew: true },
+  //       { name: 'Investors Talk', href: '#', isNew: true },
+  //       { name: 'Co-founder Match', href: '#' },
+  //       { name: 'Job & Hire', href: '#', isNew: true },
+  //       { name: 'Startups Blogs', href: '#', isNew: true },
+  //       { name: 'Startup Demo Day', href: '#', isNew: true }
+  //     ]
+  //   },
+  //   {
+  //     title: 'Knowledge Hub',
+  //     links: [
+  //       { name: 'Learn', href: '#' },
+  //       { name: 'Launch & Scale', href: '#', isNew: true },
+  //       { name: 'Fundraising', href: '#', isNew: true },
+  //       { name: 'Growth/Marketing', href: '#', isNew: true },
+  //       { name: 'Startup School', href: '#', isNew: true },
+  //       { name: 'Demo Days', href: '#', isNew: true }
+  //     ]
+  //   },
+  //   {
+  //     title: 'Members',
+  //     links: [
+  //       { name: 'Community', href: '#' },
+  //       { name: 'Member Directory', href: '#', isNew: true },
+  //       { name: 'Member Calendar', href: '#', isNew: true }
+  //     ]
+  //   },
+  //   {
+  //     title: 'About & Contact',
+  //     links: [
+  //       { name: 'About Us', href: '#' },
+  //       { name: 'Contact US', href: '#' },
+  //       { name: 'VCs Newsletter', href: '#' },
+  //       { name: 'VC Daily Updates', href: '#' },
+  //       { name: 'Newsletter Ads', href: '#' }
+  //     ]
+  //   }
+  // ];
 
   return (
     <>
