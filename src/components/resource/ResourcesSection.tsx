@@ -32,13 +32,10 @@ const ResourcesSection = () => {
         </div> */}
 
         <div className="max-w-1xl mx-auto text-md text-gray-600">
-           Prime White Stallion Foundation is a non-governmental organisation dedicated to Alleviating poverty and fostering sustainable development in Nigeria. Founded on innovation,
-           collaboration and empowerment principles, we work tirelessly to empower individuals and communities to create positive change from within. 
+            Prime White Stallions is dedicated to transforming healthcare financing for the poor and vulnerable through participatory investment. We bridge the gap between donors, investors, entrepreneurs, and the Nigerian Basic Healthcare Provision Fund (BHCPF) to create sustainable healthcare solutions. 
         </div>
         <div className="max-w-1xl mx-auto text-md text-gray-600">
-          Our core activities include empowerment programs, community development projects, advocacy, 
-          and capacity-building initiatives. We believe in leveraging technology, entrepreneurship, 
-          and community-driven approaches to address the root causes of poverty and create lasting impact.
+          By blending donor funds with private capital, we enable innovative financing models that empower businesses and enhance healthcare access. Our mission is to foster strategic partnerships that drive impactful investments, ensuring quality healthcare reaches those who need it most.
         </div>
         
         <div className="text-center mt-10">

@@ -74,9 +74,8 @@ const CTAAndFooter = () => {
       {/* Footer */}
       <footer className="bg-white py-12 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <div className="flex items-center">
-              {/* <p className="text-sm text-gray-600">By The Venture Crew LLC</p> */}
             </div>
             <div className="flex space-x-4 mt-4">
               <a href="#" className="text-gray-400 hover:text-gray-500">
@@ -92,9 +91,9 @@ const CTAAndFooter = () => {
                 </svg>
               </a>
             </div>
-          </div>
+          </div> */}
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {footerLinks.map((column, idx) => (
               <div key={idx}>
                 <h3 className="text-sm font-semibold text-gray-900 tracking-wider uppercase mb-4">
@@ -114,17 +113,20 @@ const CTAAndFooter = () => {
                 </ul>
               </div>
             ))}
-          </div>
+          </div> */}
           
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between">
             <div className="flex items-center mb-4 md:mb-0">
               <p className="text-sm text-gray-600">Made by Pws.</p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-gray-600">
-              <a href="#" className="hover:text-gray-900">Contact Us</a>
+              {/* <a href="#" className="hover:text-gray-900">Contact Us</a>
               <a href="#" className="hover:text-gray-900">Terms and Conditions (T&C)</a>
               <a href="#" className="hover:text-gray-900">Privacy Policy</a>
-              <a href="#" className="hover:text-gray-900">Fulfillment & Refund Policy</a>
+              <a href="#" className="hover:text-gray-900">Fulfillment & Refund Policy</a> */}
+
+                <a href="#" className="hover:text-gray-900">© 2025 PWS. All Rights Reserved.</a>
+
             </div>
           </div>
           

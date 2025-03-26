@@ -9,7 +9,7 @@ const StatsSection = () => {
              Participatory Investment 
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
-            Participation investment is an investment initiative that uses a blended finance structure which allows the Vulnerable group to participate in the capital market
+            Participatory investment enables donors, private investors, and government entities to pool resources aimed at improving healthcare access, especially for vulnerable populations
           </p>
         </div>
 
@@ -40,14 +40,14 @@ const StatsSection = () => {
                 Mission
               </h2>
               <div className="max-w-3xl mx-auto text-md text-gray-600">
-                Strengthening partnership to coordinate the Investment for the vulnerable group fund (VGF)
+                Empowering donors, investors, and entrepreneurs to drive sustainable healthcare financing through participatory investment and strategic partnerships.
               </div>
           </div>
         </div>
 
         <div className="text-center mt-12">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-20">
-            Prime white stallion plans
+            Prime white stallions plans
           </h3>
         </div>
       </div>

@@ -15,7 +15,7 @@ const Navbar = () => {
               <div className="h-8 w-8 mr-2 flex items-center justify-center text-xs font-bold">
                 <img src="/logo.png" alt="" />
               </div>
-              <span className="font-bold text-xl">Prime White Stallion</span>
+              <span className="font-bold text-xl">Prime White Stallions</span>
             </div>
           </div>
           
@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
               Advertise
             </a> */}
-            <a href="#" className="ml-4 px-4 py-2 text-sm font-medium text-white bg-[#5C97FF] rounded-md hover:bg-blue-700">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfko2VCcL4AE2m0Fb_kSaUA13hNkS4Lpmv426KO69sCaT6Zow/viewform?usp=dialog" className="ml-4 px-4 py-2 text-sm font-medium text-white bg-[#5C97FF] rounded-md hover:bg-blue-700">
               Become A Member
             </a>
           </div>
