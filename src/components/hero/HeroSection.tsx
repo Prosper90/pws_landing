@@ -27,8 +27,8 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="md:w-1/2 md:pl-12 relative">
-            <div className="grid grid-cols-3 gap-2 relative">
-              {/* Profile circles */}
+            {/* Profile circles */}
+            {/* <div className="grid grid-cols-3 gap-2 relative">
               {[...Array(9)].map((_, index) => (
                 <div 
                   key={index} 
@@ -43,6 +43,9 @@ const HeroSection = () => {
                  <img src={`/Ellipse ${index}.png`} alt="" />  
                 </div>
               ))}
+            </div> */}
+            <div className="h-full rounded-lg">
+              <img src="illustration1.png" alt="Hero Illustration" className="h-auto md:h-96 rounded-lg" />
             </div>
           </div>
         </div>

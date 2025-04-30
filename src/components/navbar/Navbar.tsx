@@ -27,18 +27,18 @@ const Navbar = () => {
             <div className="relative">
               <button 
                 className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600 inline-flex items-center"
-                onClick={() => setIsResourcesOpen(!isResourcesOpen)}
+                // onClick={() => setIsResourcesOpen(!isResourcesOpen)}
               >
-                Updates
-                <ChevronDown className="ml-1 h-4 w-4" />
+                Team
+                {/* <ChevronDown className="ml-1 h-4 w-4" /> */}
               </button>
-              {isResourcesOpen && (
+              {/* {isResourcesOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">All Resources</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Community</a>
                   <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Events</a>
                 </div>
-              )}
+              )} */}
             </div>
             <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
               Contact Us
@@ -49,6 +49,16 @@ const Navbar = () => {
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfko2VCcL4AE2m0Fb_kSaUA13hNkS4Lpmv426KO69sCaT6Zow/viewform?usp=dialog" className="ml-4 px-4 py-2 text-sm font-medium text-white bg-[#5C97FF] rounded-md hover:bg-blue-700">
               Become A Member
             </a>
+
+            <div className="flex justify-center items-center">
+              <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+                SignUp
+              </a>       
+              |
+              <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+                LogIn
+              </a>
+            </div>
           </div>
           
           {/* Mobile menu button */}

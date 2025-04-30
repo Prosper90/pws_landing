@@ -1,24 +1,28 @@
 import './App.css'
-import Navbar from './components/navbar/Navbar'
-import HeroSection from './components/hero/HeroSection'
-import StatsSection from './components/stats/StatsSection'
-import CommunityFeatures from './components/community/CommunityFeatures'
-import ResourcesSection from './components/resource/ResourcesSection'
-import CTAAndFooter from './components/footer/CTAAndFooter'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Dashboard from './pages/Dashboard'
+import ProtectedRoute from './routes/ProtectedRoute'
+import Team from './pages/Team'
 
 function App() {
-
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <main className="pt-16"> {/* Add padding to account for fixed navbar */}
-        <HeroSection />
-        <StatsSection />
-        <CommunityFeatures />
-        <ResourcesSection />
-        <CTAAndFooter />
-      </main>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
   )
 }
 
