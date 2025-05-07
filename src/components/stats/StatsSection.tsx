@@ -31,7 +31,8 @@ const StatsSection = () => {
                 Our vision
               </h2>
               <div className="max-w-4xl mx-auto text-md text-gray-600">
-                Our vision is to strenghten the Basic Healthcare through participatory investment, ensuring sustainable healthcare for the poor and vulnerable
+                We aim to unlock investment in the healthcare value chain for the Economic Community of
+                West African States (ECOWAS) to achieve universal health coverage
               </div>
           </div>
           {/* Second one */}
@@ -40,14 +41,15 @@ const StatsSection = () => {
                 Mission
               </h2>
               <div className="max-w-3xl mx-auto text-md text-gray-600">
-                Empowering donors, investors, and entrepreneurs to drive sustainable healthcare financing through participatory investment and strategic partnerships.
+                We utilise our donor funds to attract private capital for investment in companies within the
+                West African healthcare value chain.
               </div>
           </div>
         </div>
 
         <div className="text-center mt-12">
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mt-20">
-            Prime white stallions plans
+            HOW PARTICIPANTS BLEND FOR UNIVERSAL HEALTH COVERAGE.
           </h3>
         </div>
       </div>

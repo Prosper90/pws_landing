@@ -32,10 +32,13 @@ const ResourcesSection = () => {
         </div> */}
 
         <div className="max-w-1xl mx-auto text-md text-gray-600">
-            Prime White Stallions is dedicated to transforming healthcare financing for the poor and vulnerable through participatory investment. We bridge the gap between donors, investors, entrepreneurs, and the Nigerian Basic Healthcare Provision Fund (BHCPF) to create sustainable healthcare solutions. 
+          Prime White Stallions is dedicated to strengthening the Economic Community of West African
+          States (ECOWAS) by lowering the risk for investors in the health care value chain for the
+          region.
         </div>
         <div className="max-w-1xl mx-auto text-md text-gray-600">
-          By blending donor funds with private capital, we enable innovative financing models that empower businesses and enhance healthcare access. Our mission is to foster strategic partnerships that drive impactful investments, ensuring quality healthcare reaches those who need it most.
+          Manufacturers coming into this region can get better conditions for raising capital and
+          get incentives through the National policy frameworks for Universal Health Coverage.
         </div>
         
         <div className="text-center mt-10">

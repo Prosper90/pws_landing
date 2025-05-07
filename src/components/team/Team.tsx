@@ -19,8 +19,8 @@ export default function Team() {
       socials: ["linkedin", "twitter"]
     },
     {
-      name: "Bob Greenfield",
-      img: "./bobby.jpg",
+      name: "Onyekosor Prosper",
+      img: "./prosper.png",
       title: "Programming Guru",
       bio: "Glavi amet ritnil libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
       socials: ["linkedin", "twitter"]

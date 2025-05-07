@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div className="md:flex items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-              We're changing the economic landscapes one step at a time
+              We're unlocking the health care value chain for the Economic community of West African States (ECOWAS)
             </h1>
             <p className="text-lg text-gray-600 mb-6">
               Strengthening partnership to coordinate the Investment for the vulnerable group fund (VGF)
