@@ -13,7 +13,7 @@ const CommunityFeatures = () => {
             <div className="md:flex items-center mb-24">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">1</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">SPWS Donors</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">PWS Donors</h3>
                 <p className="text-gray-600 mb-4">
                   Our donors help attract private capital to the ECOWAS region. Through our collaboration with
                   supply chain traceability systems, each country can maintain authentic data on drug supply

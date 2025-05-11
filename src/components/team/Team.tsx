@@ -5,23 +5,23 @@ export default function Team() {
   
   const teamMembers = [
     {
-      name: "Anthony Dauglas",
-      img: "./bobby.jpg",
-      title: "Creative Leader",
+      name: "ANTHONY DOUGLAS",
+      img: "./bobby.JPG",
+      title: "CEO",
       bio: "Glavi amet ritnil libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
       socials: ["linkedin", "twitter"]
     },
     {
-      name: "Ann Richmond",
+      name: "NDUKWE KENECHUKWU",
       img: "./kene.jpg",
-      title: "Creative Leader",
+      title: "HEAD OF PARTNERSHIPS",
       bio: "Glavi amet ritnil libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
       socials: ["linkedin", "twitter"]
     },
     {
       name: "Onyekosor Prosper",
       img: "./prosper.png",
-      title: "Programming Guru",
+      title: "CTO",
       bio: "Glavi amet ritnil libero molestie ante ut fringilla purus eros quis glavrid from dolor amet iquam lorem bibendum",
       socials: ["linkedin", "twitter"]
     }
@@ -67,14 +67,14 @@ export default function Team() {
                   <img 
                     src={member.img} 
                     alt={member.name} 
-                    className="w-full h-full object-cover"
+                    className="w-full h-auto object-cover"
                   />
                 </div>
                 
                 <h3 className="text-xl font-bold text-center">{member.name.toUpperCase()}</h3>
                 <p className="text-gray-600 text-center mb-4">{member.title}</p>
                 
-                <p className="text-gray-500 text-center text-sm mb-6">{member.bio}</p>
+                {/* <p className="text-gray-500 text-center text-sm mb-6">{member.bio}</p> */}
                 
                 <div className="flex justify-center space-x-4">
                   {member.socials.map((social, idx) => (

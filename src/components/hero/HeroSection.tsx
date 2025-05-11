@@ -5,12 +5,12 @@ const HeroSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="md:flex items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+            <h1 className="text-4xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
               We're unlocking the health care value chain for the Economic community of West African States (ECOWAS)
             </h1>
-            <p className="text-lg text-gray-600 mb-6">
+            {/* <p className="text-lg text-gray-600 mb-6">
               Strengthening partnership to coordinate the Investment for the vulnerable group fund (VGF)
-            </p>
+            </p> */}
             <div className="flex flex-wrap gap-4">
               <a
                 href="#"
@@ -45,7 +45,7 @@ const HeroSection = () => {
               ))}
             </div> */}
             <div className="h-full rounded-lg">
-              <img src="illustration1.png" alt="Hero Illustration" className="h-auto md:h-96 rounded-lg" />
+              <img src="comingSoon.png" alt="Hero Illustration" className="h-auto md:h-96 rounded-lg" />
             </div>
           </div>
         </div>
