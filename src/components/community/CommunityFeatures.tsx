@@ -15,7 +15,7 @@ const CommunityFeatures = () => {
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">1</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">PWS Donors</h3>
                 <p className="text-gray-600 mb-4">
-                  Our donors help attract private capital to the ECOWAS region. Through our collaboration with
+                  Our donors help attract private capital to the ECOWAS region. Through our integration with
                   supply chain traceability systems, each country can maintain authentic data on drug supply
                   across the universal health coverage framework. 
                 </p>
