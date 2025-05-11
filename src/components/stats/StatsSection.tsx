@@ -9,7 +9,7 @@ const StatsSection = () => {
              Participatory Investment 
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
-            Participatory investment enables donors, private investors, and government entities to pool resources aimed at improving healthcare access, especially for vulnerable populations
+            Participatory investment uses blended finance to help donors mobilize capital in emerging markets for sustainable development goals.
           </p>
         </div>
 
