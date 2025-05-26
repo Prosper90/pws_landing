@@ -42,7 +42,7 @@ export default function Login() {
           <div>
             <label 
               htmlFor="email" 
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-gray-700 font-medium mb-2 text-start"
             >
               Email Address
             </label>
@@ -79,7 +79,7 @@ export default function Login() {
           <div>
             <label 
               htmlFor="password" 
-              className="block text-gray-700 font-medium mb-2"
+              className="block text-gray-700 font-medium mb-2 text-start"
             >
               Password
             </label>
@@ -123,7 +123,7 @@ export default function Login() {
 
           <div className="text-center mt-4">
             Don't have an account?{" "}
-            <a href="/signup" className="text-blue-500 font-medium hover:underline">
+            <a href="/manufacturers" className="text-blue-500 font-medium hover:underline">
               Sign Up
             </a>
           </div>
