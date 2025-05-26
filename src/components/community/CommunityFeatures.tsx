@@ -98,11 +98,11 @@ const CommunityFeatures = () => {
                   Insurance Scheme can access products from these manufacturers.
                 </p>
               </div>
-              <div className="md:w-1/2 md:pr-12">
+              <div className="md:w-1/2 md:pl-12">
                 <div className="relative rounded-md overflow-hidden shadow-lg">
                   <div className="aspect-w-16 aspect-h-9 bg-gray-200">
                     {/* This would be an image in the actual implementation */}
-                    <div className="w-full h-full  flex items-center justify-center text-white">
+                    <div className="w-full h-full flex items-center justify-center text-white">
                       <img src="/card 4.png" alt="" />
                     </div>
                   </div>
