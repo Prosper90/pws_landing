@@ -88,7 +88,7 @@ const CommunityFeatures = () => {
             */}
 
             {/* Feature 4: Again more */}
-            <div className="md:flex items-center flex-row-reverse">
+            <div className="md:flex items-center">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pl-12">
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">4</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">National Governments:</h3>
