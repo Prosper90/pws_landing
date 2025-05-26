@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Eye, EyeOff, Upload, X } from "lucide-react";
+import { Upload, X } from "lucide-react";
 
 interface CustomDropdownProps {
   options: string[];
@@ -83,7 +83,7 @@ export default function Manufacturers() {
   const [errors, setErrors] = useState<Partial<Record<keyof IFormData, string>>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
-  const [currentStep, setCurrentStep] = useState(1);
+  // const [currentStep, setCurrentStep] = useState(1);
   const [dragActive, setDragActive] = useState(false);
 
   const countries = [
