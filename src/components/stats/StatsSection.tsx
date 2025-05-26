@@ -9,7 +9,7 @@ const StatsSection = () => {
              Participatory Investment 
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-gray-600">
-            Participatory investment uses blended finance to help donors mobilize capital in emerging markets for sustainable development goals.
+            Healthcare manufacturers investing in the West African region can leverage Prime White Stallions to participate in a collaborative finance framework aimed at achieving universal health coverage.
           </p>
         </div>
 
@@ -41,8 +41,7 @@ const StatsSection = () => {
                 Mission
               </h2>
               <div className="max-w-3xl mx-auto text-md text-gray-600">
-                We utilise our donor funds to attract private capital for investment in companies within the
-                West African healthcare value chain.
+                We leverage volume guarantees and framed contracts from national health insurance schemes to our manufacturers as a means to reduce investment risk for capital providers
               </div>
           </div>
         </div>

@@ -6,12 +6,14 @@ import Dashboard from './pages/Dashboard'
 import ProtectedRoute from './routes/ProtectedRoute'
 import Team from './pages/Team'
 import { Route, Routes } from 'react-router-dom'
+import Manufacturers from './pages/Manufacturers'
 
 function App() {
   return (
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/manufacturers" element={<Manufacturers />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route

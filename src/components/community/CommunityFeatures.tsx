@@ -13,11 +13,9 @@ const CommunityFeatures = () => {
             <div className="md:flex items-center mb-24">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">1</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">PWS Donors</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">PWS</h3>
                 <p className="text-gray-600 mb-4">
-                  Our donors help attract private capital to the ECOWAS region. Through our integration with
-                  supply chain traceability systems, each country can maintain authentic data on drug supply
-                  across the universal health coverage framework. 
+                   We coordinate manufacturers in the health care value chain, seeking to invest in West Africa, to get access to capital from our partners, and also volume guarantees from the National Health Insurance Framework
                 </p>
                 {/* <p className="text-gray-600">
                   The community is designed to help you easily find the most 
@@ -45,10 +43,9 @@ const CommunityFeatures = () => {
             <div className="md:flex items-center flex-row-reverse">
               <div className="md:w-1/2 mb-8 md:mb-0 md:pl-12">
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">2</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Capital Providers:</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">CAPITAL PROVIDERS</h3>
                 <p className="text-gray-600">
-                  We collaborate with capital providers to secure investment funds for manufacturers that come
-                  to West Africa. Our donor funds serve as a key incentive for private capital providers.
+                  Our partnership with capital providers streamlines their investment for our manufacturers through the national health insurance framework. This reduces investment risk for capital providers
                 </p>
               </div>
               <div className="md:w-1/2 md:pr-12">
@@ -65,7 +62,7 @@ const CommunityFeatures = () => {
 
 
             {/* Feature 3: Further more */}
-            <div className="md:flex items-center mb-24">
+            {/* <div className="md:flex items-center mb-24">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">3</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">Manufacturers:</h3>
@@ -74,18 +71,11 @@ const CommunityFeatures = () => {
                   region. Additionally, we connect these manufacturers with capital providers who have pledged
                   funding through our initiative, which utilises a blended finance structure.
                 </p>
-                {/* <p className="text-gray-600">
-                  The community is designed to help you easily find the most 
-                  relevant conversations, get help, and network with others. Our 
-                  community spaces are specific to the stage, startup building, 
-                  raising funds, getting the first customer, connecting with 
-                  partners, startup topics and more.
-                </p> */}
+
               </div>
               <div className="md:w-1/2 md:pl-12">
                 <div className="relative rounded-md overflow-hidden shadow-lg">
                   <div className="aspect-w-16 aspect-h-9 bg-gray-200">
-                    {/* This would be an image in the actual implementation */}
                     <div className="w-full h-full flex items-center justify-center text-white">
                       <img src="/card 3.png" alt=""  />
                     </div>
@@ -94,7 +84,8 @@ const CommunityFeatures = () => {
                   <div className="absolute -top-6 -right-6 w-24 h-24 bg-yellow-400 rounded-full"></div>
                 </div>
               </div>
-            </div>
+            </div> 
+            */}
 
             {/* Feature 4: Again more */}
             <div className="md:flex items-center flex-row-reverse">
@@ -102,7 +93,7 @@ const CommunityFeatures = () => {
                 <div className="bg-yellow-400 w-8 h-8 rounded-full flex items-center justify-center font-bold text-white mb-4">4</div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">National Governments:</h3>
                 <p className="text-gray-600">
-                  We assist manufacturers in securing framed contracts and volume guarantees that align with
+                  Government assist manufacturers in securing framed contracts and volume guarantees that align with
                   national universal health coverage policies. This ensures that enrollees in the National Health
                   Insurance Scheme can access products from these manufacturers.
                 </p>

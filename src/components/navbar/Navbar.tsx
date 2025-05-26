@@ -46,16 +46,16 @@ const Navbar = () => {
             {/* <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
               Advertise
             </a> */}
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfko2VCcL4AE2m0Fb_kSaUA13hNkS4Lpmv426KO69sCaT6Zow/viewform?usp=dialog" className="ml-4 px-4 py-2 text-sm font-medium text-white bg-[#5C97FF] rounded-md hover:bg-blue-700">
+            <a href="/manufacturers" className="ml-4 px-4 py-2 text-sm font-medium text-white bg-[#5C97FF] rounded-md hover:bg-blue-700">
               Become A Member
             </a>
 
             <div className="flex justify-center items-center">
-              <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+              {/* <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
                 SignUp
               </a>       
-              |
-              <a href="#" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
+              | */}
+              <a href="/login" className="px-3 py-2 text-sm font-medium text-gray-900 hover:text-blue-600">
                 LogIn
               </a>
             </div>
