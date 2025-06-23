@@ -1,61 +1,6 @@
 import { useState } from "react";
 import { Upload, X } from "lucide-react";
-
-interface CustomDropdownProps {
-  options: string[];
-  onSelect: (value: string) => void;
-  placeholder: string;
-  className?: string;
-  value?: string;
-}
-
-const CustomDropdown = ({ options, onSelect, placeholder, className = "", value }: CustomDropdownProps) => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedValue, setSelectedValue] = useState(value || "");
-
-  const handleSelect = (option: string) => {
-    setSelectedValue(option);
-    onSelect(option);
-    setIsOpen(false);
-  };
-
-  return (
-    <div className={`relative ${className}`}>
-      <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full bg-transparent px-4 py-3 border border-[#5C97FF] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-left flex justify-between items-center"
-      >
-        <span className={selectedValue ? "text-black" : "text-gray-400"}>
-          {selectedValue || placeholder}
-        </span>
-        <svg 
-          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
-          fill="none" 
-          stroke="currentColor" 
-          viewBox="0 0 24 24"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-        </svg>
-      </button>
-      
-      {isOpen && (
-        <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
-          {options.map((option, index) => (
-            <button
-              key={index}
-              type="button"
-              onClick={() => handleSelect(option)}
-              className="w-full px-4 py-2 text-left hover:bg-gray-100 focus:bg-gray-100 focus:outline-none"
-            >
-              {option}
-            </button>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-};
+import { CustomDropdown } from "../components/utils/CustomDropdown";
 
 interface IFormData {
   country: string;
@@ -77,25 +22,36 @@ export default function Manufacturers() {
     position: "",
     email: "",
     pitchDeck: null,
-    financingType: ""
+    financingType: "",
   });
 
-  const [errors, setErrors] = useState<Partial<Record<keyof IFormData, string>>>({});
+  const [errors, setErrors] = useState<
+    Partial<Record<keyof IFormData, string>>
+  >({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [showConfirmation, setShowConfirmation] = useState(false);
   // const [currentStep, setCurrentStep] = useState(1);
   const [dragActive, setDragActive] = useState(false);
 
   const countries = [
-    "Benin Republic", "Carbo Verde", "Côte d'Ivoire", "The Gambia", 
-    "Ghana", "Guinea", "Guinea-Bissau", "Liberia", "Nigeria", 
-    "Senegal", "Sierra Leone", "Togo"
+    "Benin Republic",
+    "Carbo Verde",
+    "Côte d'Ivoire",
+    "The Gambia",
+    "Ghana",
+    "Guinea",
+    "Guinea-Bissau",
+    "Liberia",
+    "Nigeria",
+    "Senegal",
+    "Sierra Leone",
+    "Togo",
   ];
 
   const categories = [
-    "Pharmaceutical manufacturer", 
-    "Medical device Manufacturers", 
-    "Others"
+    "Pharmaceutical manufacturer",
+    "Medical device Manufacturers",
+    "Others",
   ];
 
   const positions = ["CEO", "DIRECTOR", "CFO", "OTHERS"];
@@ -113,48 +69,49 @@ export default function Manufacturers() {
 
     // Country validation
     if (!formData.country.trim()) {
-      newErrors.country = 'Country is required';
+      newErrors.country = "Country is required";
     }
 
     // Manufacturer name validation
     if (!formData.manufacturerName.trim()) {
-      newErrors.manufacturerName = 'Manufacturer name is required';
+      newErrors.manufacturerName = "Manufacturer name is required";
     } else if (formData.manufacturerName.trim().length < 2) {
-      newErrors.manufacturerName = 'Manufacturer name must be at least 2 characters';
+      newErrors.manufacturerName =
+        "Manufacturer name must be at least 2 characters";
     }
 
     // Category validation
     if (!formData.category.trim()) {
-      newErrors.category = 'Category is required';
+      newErrors.category = "Category is required";
     }
 
     // Applicant name validation
     if (!formData.applicantName.trim()) {
-      newErrors.applicantName = 'Applicant name is required';
+      newErrors.applicantName = "Applicant name is required";
     } else if (formData.applicantName.trim().length < 2) {
-      newErrors.applicantName = 'Applicant name must be at least 2 characters';
+      newErrors.applicantName = "Applicant name must be at least 2 characters";
     }
 
     // Position validation
     if (!formData.position.trim()) {
-      newErrors.position = 'Position is required';
+      newErrors.position = "Position is required";
     }
 
     // Email validation
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!validateEmail(formData.email)) {
-      newErrors.email = 'Please enter a valid email address';
+      newErrors.email = "Please enter a valid email address";
     }
 
     // Pitch deck validation
     if (!formData.pitchDeck) {
-      newErrors.pitchDeck = 'Pitch deck is required';
+      newErrors.pitchDeck = "Pitch deck is required";
     }
 
     // Financing type validation
     if (!formData.financingType.trim()) {
-      newErrors.financingType = 'Financing type is required';
+      newErrors.financingType = "Financing type is required";
     }
 
     setErrors(newErrors);
@@ -165,31 +122,31 @@ export default function Manufacturers() {
     const { name, value } = e.target;
     const fieldName = name as keyof IFormData;
 
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [fieldName]: value
+      [fieldName]: value,
     }));
 
     // Clear error for this field when user starts typing
     if (errors[fieldName]) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        [fieldName]: ''
+        [fieldName]: "",
       }));
     }
   };
 
   const handleDropdownChange = (field: keyof IFormData, value: string) => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [field]: value
+      [field]: value,
     }));
 
     // Clear error for this field
     if (errors[field]) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        [field]: ''
+        [field]: "",
       }));
     }
   };
@@ -197,40 +154,40 @@ export default function Manufacturers() {
   const handleFileUpload = (file: File) => {
     // Validate file type (accept PDF, DOC, DOCX, PPT, PPTX)
     const allowedTypes = [
-      'application/pdf',
-      'application/msword',
-      'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-      'application/vnd.ms-powerpoint',
-      'application/vnd.openxmlformats-officedocument.presentationml.presentation'
+      "application/pdf",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "application/vnd.ms-powerpoint",
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation",
     ];
 
     if (!allowedTypes.includes(file.type)) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        pitchDeck: 'Please upload a PDF, Word document, or PowerPoint file'
+        pitchDeck: "Please upload a PDF, Word document, or PowerPoint file",
       }));
       return;
     }
 
     // Validate file size (max 10MB)
     if (file.size > 10 * 1024 * 1024) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        pitchDeck: 'File size must be less than 10MB'
+        pitchDeck: "File size must be less than 10MB",
       }));
       return;
     }
 
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      pitchDeck: file
+      pitchDeck: file,
     }));
 
     // Clear error
     if (errors.pitchDeck) {
-      setErrors(prev => ({
+      setErrors((prev) => ({
         ...prev,
-        pitchDeck: ''
+        pitchDeck: "",
       }));
     }
   };
@@ -256,24 +213,23 @@ export default function Manufacturers() {
   };
 
   const removeFile = () => {
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      pitchDeck: null
+      pitchDeck: null,
     }));
   };
 
   const handleSubmit = () => {
-    
     if (validateForm()) {
       setIsSubmitted(true);
       setShowConfirmation(true);
-      
+
       // Simulate API call
       setTimeout(() => {
         setShowConfirmation(false);
         setIsSubmitted(false);
         // Reset form or redirect
-        console.log('Form submitted successfully:', formData);
+        console.log("Form submitted successfully:", formData);
       }, 3000);
     }
   };
@@ -284,13 +240,26 @@ export default function Manufacturers() {
         <div className="w-full max-w-md mx-auto text-center">
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              <svg
+                className="w-8 h-8 text-green-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
               </svg>
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Application Submitted!</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">
+              Application Submitted!
+            </h2>
             <p className="text-gray-600 mb-4">
-              Thank you for your submission. We'll review your application and get back to you soon.
+              Thank you for your submission. We'll review your application and
+              get back to you soon.
             </p>
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500 mx-auto"></div>
           </div>
@@ -309,7 +278,9 @@ export default function Manufacturers() {
         </div>
 
         <div className="bg-white rounded-lg shadow-lg p-8">
-          <h1 className="text-3xl font-bold text-center mb-2">Manufacturers Information</h1>
+          <h1 className="text-3xl font-bold text-center mb-2">
+            Manufacturers Information
+          </h1>
           <p className="text-gray-500 text-center mb-8">
             Please complete all required fields to submit your application
           </p>
@@ -322,7 +293,7 @@ export default function Manufacturers() {
               </label>
               <CustomDropdown
                 options={countries}
-                onSelect={(value) => handleDropdownChange('country', value)}
+                onSelect={(value) => handleDropdownChange("country", value)}
                 placeholder="Choose your country..."
                 value={formData.country}
               />
@@ -336,7 +307,7 @@ export default function Manufacturers() {
               <label className="block text-gray-700 font-medium mb-2 text-start">
                 Name Of Manufacturer <span className="text-red-500">*</span>
               </label>
-              <input 
+              <input
                 type="text"
                 name="manufacturerName"
                 value={formData.manufacturerName}
@@ -345,18 +316,21 @@ export default function Manufacturers() {
                 className="w-full bg-transparent px-4 py-3 border border-[#5C97FF] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
               />
               {errors.manufacturerName && (
-                <p className="text-red-500 text-sm mt-1">{errors.manufacturerName}</p>
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.manufacturerName}
+                </p>
               )}
             </div>
 
             {/* Category */}
             <div>
               <label className="block text-gray-700 font-medium mb-2 text-start">
-                Category of Manufacturing <span className="text-red-500">*</span>
+                Category of Manufacturing{" "}
+                <span className="text-red-500">*</span>
               </label>
               <CustomDropdown
                 options={categories}
-                onSelect={(value) => handleDropdownChange('category', value)}
+                onSelect={(value) => handleDropdownChange("category", value)}
                 placeholder="Choose category..."
                 value={formData.category}
               />
@@ -367,14 +341,16 @@ export default function Manufacturers() {
 
             {/* Contact Info Section */}
             <div className="border-t pt-6">
-              <h3 className="text-xl font-semibold mb-4 ">Contact Information</h3>
-              
+              <h3 className="text-xl font-semibold mb-4 ">
+                Contact Information
+              </h3>
+
               {/* Applicant Name */}
               <div className="mb-4">
                 <label className="block text-gray-700 font-medium mb-2 text-start">
                   Name of Applicant <span className="text-red-500">*</span>
                 </label>
-                <input 
+                <input
                   type="text"
                   name="applicantName"
                   value={formData.applicantName}
@@ -383,7 +359,9 @@ export default function Manufacturers() {
                   className="w-full bg-transparent px-4 py-3 border border-[#5C97FF] rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
                 {errors.applicantName && (
-                  <p className="text-red-500 text-sm mt-1">{errors.applicantName}</p>
+                  <p className="text-red-500 text-sm mt-1">
+                    {errors.applicantName}
+                  </p>
                 )}
               </div>
 
@@ -394,7 +372,7 @@ export default function Manufacturers() {
                 </label>
                 <CustomDropdown
                   options={positions}
-                  onSelect={(value) => handleDropdownChange('position', value)}
+                  onSelect={(value) => handleDropdownChange("position", value)}
                   placeholder="Choose position..."
                   value={formData.position}
                 />
@@ -408,7 +386,7 @@ export default function Manufacturers() {
                 <label className="block text-gray-700 font-medium mb-2 text-start">
                   Email (Contact Email) <span className="text-red-500">*</span>
                 </label>
-                <input 
+                <input
                   type="email"
                   name="email"
                   value={formData.email}
@@ -429,7 +407,7 @@ export default function Manufacturers() {
               </label>
               <div
                 className={`border-2 border-dashed rounded-lg p-6 text-center transition-colors ${
-                  dragActive ? 'border-blue-500 bg-blue-50' : 'border-gray-300'
+                  dragActive ? "border-blue-500 bg-blue-50" : "border-gray-300"
                 }`}
                 onDragEnter={handleDrag}
                 onDragLeave={handleDrag}
@@ -440,7 +418,9 @@ export default function Manufacturers() {
                   <div className="flex items-center justify-between bg-gray-50 p-3 rounded">
                     <div className="flex items-center">
                       <Upload className="w-5 h-5 text-gray-500 mr-2" />
-                      <span className="text-sm text-gray-700">{formData.pitchDeck.name}</span>
+                      <span className="text-sm text-gray-700">
+                        {formData.pitchDeck.name}
+                      </span>
                     </div>
                     <button
                       type="button"
@@ -487,22 +467,26 @@ export default function Manufacturers() {
               </label>
               <CustomDropdown
                 options={financingTypes}
-                onSelect={(value) => handleDropdownChange('financingType', value)}
+                onSelect={(value) =>
+                  handleDropdownChange("financingType", value)
+                }
                 placeholder="Choose financing type..."
                 value={formData.financingType}
               />
               {errors.financingType && (
-                <p className="text-red-500 text-sm mt-1">{errors.financingType}</p>
+                <p className="text-red-500 text-sm mt-1">
+                  {errors.financingType}
+                </p>
               )}
             </div>
 
-            <button 
-              type="button" 
+            <button
+              type="button"
               onClick={handleSubmit}
               disabled={isSubmitted}
               className="w-full bg-[#5C97FF] text-white py-3 rounded-lg hover:bg-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isSubmitted ? 'Submitting...' : 'Submit Application'}
+              {isSubmitted ? "Submitting..." : "Submit Application"}
             </button>
 
             <div className="text-center text-sm text-gray-500 mt-4">
@@ -518,7 +502,10 @@ export default function Manufacturers() {
 
             <div className="text-center mt-4">
               Already have an account?{" "}
-              <a href="/auth/login" className="text-blue-500 font-medium hover:underline">
+              <a
+                href="/auth/login"
+                className="text-blue-500 font-medium hover:underline"
+              >
                 Login Instead
               </a>
             </div>

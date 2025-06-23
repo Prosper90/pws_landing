@@ -1,4 +1,3 @@
-
 const HeroSection = () => {
   return (
     <div className="pt-16 md:pt-24 pb-12 md:pb-20 bg-gray-50">
@@ -6,7 +5,8 @@ const HeroSection = () => {
         <div className="md:flex items-center">
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-4xl font-bold text-gray-900 leading-tight mb-4 text-wrap ">
-              We're Unlocking The Health Care Value Chain For The Economic Community Of West African States (ECOWAS)
+              We're Unlocking The Health Care Value Chain For The Economic
+              Community Of West African States (ECOWAS)
             </h1>
             {/* <p className="text-lg text-gray-600 mb-6">
               Strengthening partnership to coordinate the Investment for the vulnerable group fund (VGF)
@@ -45,7 +45,11 @@ const HeroSection = () => {
               ))}
             </div> */}
             <div className="h-full rounded-lg">
-              <img src="comingSoon.png" alt="Hero Illustration" className="h-auto md:h-96 rounded-lg" />
+              <img
+                src="illustration.png"
+                alt="Hero Illustration"
+                className="h-auto md:h-96 rounded-lg"
+              />
             </div>
           </div>
         </div>
